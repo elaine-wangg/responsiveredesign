@@ -8,38 +8,55 @@
   width: 100%;
 }
 .icon-bar {
-  width: 100%; 
+  width: 100%;
   background-color: white;
   overflow: auto;
 }
-
 .icon-bar a {
   float: left;
-  text-align: center; /* Center-align text */
-  width: 12.5%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: #f89727; /* White text color */
-  font-size: 18px;
+  text-align: center;
+  width: 12.5%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #f89727;
   object-fit: contain;
   transition: opacity 0.2s;
 }
-
 body {
   display: flex;
   background-color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: #4b2d0b;
+  font-family: "Baskerville", sans-serif;
+  color: #3c3744;
   flex-direction: column;
   align-items: center;
 }
-#staffGallery {
-  width: 70vw;
+#Welcome {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  justify-content: center;
+}
+.column {
+  flex: 50%;
+  padding: 2%;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Avenir", sans-serif;
+  font-weight: "Bold";
+  font-size: 18px;
+}
+h2 {
+  font-weight: "Bolder";
+  font-size: 64px;
+}
+h3 {
+  font-family: "Avenir", sans-serif;
+  font-weight: "Light";
+  font-size: 16px;
+}
+h4 {
+  font-family: "Avenir", sans-serif;
+  font-weight: "Bolder";
+  display: inline;
+  font-size: 16px;
 }
 .galleryImage {
   width: 100%;
@@ -58,7 +75,20 @@ body {
   background-color: rgb(204, 237, 226);
 }
 
-/* @media screen and (min-width: 600px) {
+.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-container img {
+  padding: 10px;
+  width: 30%;
+  height: 30%;
+}
+
+/* @media screen and (max-width: 600px) {
   body {
     display: flex;
     flex-direction: row;
