@@ -6,7 +6,6 @@
     <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <!-- page content goes into <body> -->
   <body>
     <!-- Navigation Bar-->
@@ -19,88 +18,151 @@
           ><img src="./assets/Home/hover48.jpg" />
           <div><h1>Home</h1></div></a
         >
-        <a href="#services"
-          ><img
-            src="./assets/Services/48.jpg"
-            onmouseover="this.src='./assets/Services/hover48.jpg';"
-            onmouseout="this.src='./assets/Services/48.jpg';"
-          />
+        <a
+          href="#services"
+          onmouseover="document.getElementById('services').src='./assets/Services/hover48.jpg';"
+          onmouseout="document.getElementById('services').src='./assets/Services/48.jpg';"
+          ><img id="services" src="./assets/Services/48.jpg" />
           <div><h1>Services</h1></div></a
         >
-        <a href="#locations"
-          ><img
-            src="./assets/Location/48.jpg"
-            onmouseover="this.src='./assets/Location/hover48.jpg';"
-            onmouseout="this.src='./assets/Location/48.jpg';"
-          />
+        <a
+          href="#locations"
+          onmouseover="document.getElementById('locations').src='./assets/Location/hover48.jpg';"
+          onmouseout="document.getElementById('locations').src='./assets/Location/48.jpg';"
+          ><img id="locations" src="./assets/Location/48.jpg" />
           <div><h1>Locations</h1></div></a
         >
-        <a href="#community"
-          ><img
-            src="./assets/Community/48.jpg"
-            onmouseover="this.src='./assets/Community/hover48.jpg';"
-            onmouseout="this.src='./assets/Community/48.jpg';"
-          />
+        <a
+          href="#community"
+          onmouseover="document.getElementById('community').src='./assets/Community/hover48.jpg';"
+          onmouseout="document.getElementById('community').src='./assets/Community/48.jpg';"
+          ><img id="community" src="./assets/Community/48.jpg" />
           <div><h1>Community</h1></div></a
         >
-        <a href="#news"
-          ><img
-            src="./assets/News/48.jpg"
-            onmouseover="this.src='./assets/News/hover48.jpg';"
-            onmouseout="this.src='./assets/News/48.jpg';"
-          />
+        <a
+          href="#news"
+          onmouseover="document.getElementById('news').src='./assets/News/hover48.jpg';"
+          onmouseout="document.getElementById('news').src='./assets/News/48.jpg';"
+          ><img id="news" src="./assets/News/48.jpg" />
           <div><h1>News</h1></div></a
         >
-        <a href="#about_us"
-          ><img
-            src="./assets/About Us/48.jpg"
-            onmouseover="this.src='./assets/About Us/hover48.jpg';"
-            onmouseout="this.src='./assets/About Us/48.jpg';"
-          />
+        <a
+          href="#about_us"
+          onmouseover="document.getElementById('about us').src='./assets/About Us/hover48.jpg';"
+          onmouseout="document.getElementById('about us').src='./assets/About Us/48.jpg';"
+          ><img id="about us" src="./assets/About Us/48.jpg" />
           <div><h1>About Us</h1></div></a
         >
-        <a href="#more"
-          ><img
-            src="./assets/More/48.jpg"
-            onmouseover="this.src='./assets/More/hover48.jpg';"
-            onmouseout="this.src='./assets/More/48.jpg';"
-          />
+        <a
+          href="#more"
+          onmouseover="document.getElementById('more').src='./assets/More/hover48.jpg';"
+          onmouseout="document.getElementById('more').src='./assets/More/48.jpg';"
+          ><img id="more" src="./assets/More/48.jpg" />
           <div><h1>More</h1></div></a
         >
       </div>
-      <div id="Welcome">
-        <div class="column">
-          <img
-            src="./assets/Welcome.png"
-            style="width: 100%; height: 90%; border-radius: 25px"
-          />
-        </div>
-        <div class="column">
-          <h2>Hi, WELCOME</h2>
-          <h3>
-            Quality Healthcare Centered Around You WellOne Primary Medical and
-            Dental Care is a Federally Qualified Health Center dedicated to
-            providing high quality healthcare to individuals and families in the
-            communities we serve. Our team of medical, dental and behavioral
-            health professionals has the experience and knowledge to help manage
-            a range of healthcare needs at any age.
-          </h3>
-          <h4>ATTENTION:</h4>
-          If you do not speak English, language assistance services, free of
-          charge, are available to you. Please call 401-568-7661.
-          <br />
-          <h4>ATENCION:</h4>
-          si habla espanol, tiene a su disposicion servicios gratuitos de
-          asistencia linguistica. Por favor, pongase en contacto con su oficina
-          medico o llame al 401-568-7661.
-        </div>
+      <hr />
+    </div>
+    <!-- Welcome Section -->
+    <div id="Welcome">
+      <div class="column">
+        <img
+          src="./assets/Welcome.png"
+          style="width: 100%; height: 100%; border-radius: 25px"
+        />
       </div>
-      <div class="scroll-container">
-        <img src="./assets/Welcome.png" alt="Cinque Terre" />
-        <img src="./assets/Welcome.png" alt="Forest" />
-        <img src="./assets/Welcome.png" alt="Northern Lights" />
-        <img src="./assets/Welcome.png" alt="Mountains" />
+      <div class="column">
+        <h2>Hi, WELCOME</h2>
+        <h3>
+          Quality Healthcare Centered Around You WellOne Primary Medical and
+          Dental Care is a Federally Qualified Health Center dedicated to
+          providing high quality healthcare to individuals and families in the
+          communities we serve. Our team of medical, dental and behavioral
+          health professionals has the experience and knowledge to help manage a
+          range of healthcare needs at any age.
+        </h3>
+        <h4>ATTENTION:</h4>
+        If you do not speak English, language assistance services, free of
+        charge, are available to you. Please call 401-568-7661.
+        <br />
+        <h4>ATENCION:</h4>
+        si habla espanol, tiene a su disposicion servicios gratuitos de
+        asistencia linguistica. Por favor, pongase en contacto con su oficina
+        medico o llame al 401-568-7661.
+        <h3>WellOne is an equal opportunity provider and employer.</h3>
       </div>
     </div>
+    <!-- Buttons for the Quick Access -->
+    <div class="buttons">
+      <button class="button" style="vertical-align: middle">
+        <span>Need Medical Care </span>
+      </button>
+      <button class="button" style="vertical-align: middle">
+        <span>Need Dental Care </span>
+      </button>
+      <button class="button" style="vertical-align: middle">
+        <span>Need Behavioral Health Care </span>
+      </button>
+    </div>
+    <!-- Horizontal Scroll Menu -->
+    <div class="scroll-container">
+      <a>
+        <h1>Enroll in Current Care</h1>
+        <img
+          src="./assets/Enroll in Current Care/512.jpg"
+          alt="Enroll in Current Care"
+        />
+      </a>
+      <a>
+        <h1>Insurance Help</h1>
+        <img src="./assets/Insurance Help/512.jpg" alt="Insurance Help" />
+      </a>
+      <a>
+        <h1>Support WellOne</h1>
+        <img src="./assets/Support Well One/512.jpg" alt="Support Well One" />
+      </a>
+      <a>
+        <h1>Support WellOne</h1>
+        <img src="./assets/Support Well One/512.jpg" alt="Support Well One" />
+      </a>
+    </div>
+    <!-- Qualifications -->
+    <div id="Welcome">
+      <div class="column">
+        <h3>
+          WellOne is the primary medical, dental and behavioral health provider
+          of choice for the residents of the Rhode Island communities that we
+          serve. As a result of our efforts, these residents have achieved the
+          highest attainable level of physical, psychological and social
+          well-being.
+        </h3>
+        <h3>
+          WellOne is Recognized as a National Leader in Clinical Quality Care
+          Study Shows Care Provided by NPs and MDs in Community Health Centers
+          Does Not Differ Our Principles and Values
+        </h3>
+
+        We seek to be the leader in community-based primary care. We serve all
+        patients regardless of race, color, national origin, religious
+        affiliation, gender identity/expression, sex, sexual orientation, age,
+        disability or ability to pay. We place an emphasis on health and
+        wellness in addition to treatment. We emphasize public and community
+        health. We are committed to reducing physical, social, cultural,
+        linguistic and financial barriers to care. We have a firm conviction
+        that a critical component of health care is providing patient education.
+        We support patients’ individual choices and decisions that affect health
+        care. We treat one another with respect. We maintain a work environment
+        which promotes organizational excellence and which encourages employees
+        to achieve their fullest potential. We support the standards set forth
+        by the Bureau of Primary Health Care We recognize the interdependence of
+        services and work cooperatively with others in the coordination of
+        patient care. We work to transform the health care delivery and
+        financing system through innovation and collaboration.
+      </div>
+      <div class="column">
+        <img src="./assets/FSHCAA Seal.jpg" style="width: 80%; height: 85%" />
+      </div>
+    </div>
+    <!-- Contact Us -->
   </body>
 </html>
