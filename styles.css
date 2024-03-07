@@ -135,7 +135,16 @@ hr {
   padding-right: 20px;
   font-size: 36px;
 }
-
+.end-container {
+  display: flex;
+  background-color: #3c3744;
+  padding: 10px;
+  width: 100%;
+}
+.end-container h1 {
+  color: #ffffff;
+  font-size: 24px;
+}
 /* @media screen and (max-width: 600px) {
   body {
     display: flex;
