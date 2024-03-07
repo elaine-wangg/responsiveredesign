@@ -69,10 +69,6 @@ h5 {
   justify-content: right;
   display: inline;
 }
-h6 {
-  color: white;
-  font-size: 10px;
-}
 hr {
   border-top: 1px solid #0092cf;
 }
@@ -135,7 +131,7 @@ hr {
   transition: opacity 0.3s;
 }
 .scroll-container a:hover img {
-  opacity: 0.7; /* Change the opacity on hover */
+  opacity: 0.5; /* Change the opacity on hover */
 }
 .scroll-container a .overlay {
   position: absolute;
@@ -159,6 +155,24 @@ hr {
   font-weight: "Bold";
   text-align: right;
   padding-right: 20px;
+  color: #ffffff;
+  font-size: 28px;
+}
+#Section {
+  display: flex;
+  padding-left: 9%;
+  align-items: center;
+}
+.section_column {
+  flex: 50%;
+  flex-direction: column;
+ /* Center the items in the column */
+  text-align: center;
+}
+.section_column h1 {
+  font-family: "Baskerville", sans-serif;
+  font-weight: "Bolder";
+  color: #0092cf;
   font-size: 36px;
 }
 .end-container {
@@ -166,9 +180,19 @@ hr {
   padding: 10px;
   width: 100%;
 }
-.end-container h1{
+.end-container h1 {
   color: white;
   font-size: 24px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.end-container h2 {
+  font-family: "Avenir", sans-serif;
+  font-weight: "Regular";
+  color: white;
+  font-size: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 /* @media screen and (max-width: 600px) {
   body {
